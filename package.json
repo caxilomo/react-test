@@ -7,19 +7,35 @@
   "author": "Amador Mateo Fernandez <amateofernandez@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack/dev.config.js"
+    "start": "webpack-dev-server --config ./webpack/dev.config.js",
+    "test": "BABEL_ENV=test NODE_PATH=./src:./ mocha --opts src/tests/mocha.opts src/tests"
   },
   "dependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.1.1",
+    "yargs": "^10.0.3"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "chai-enzyme": "1.0.0-beta.0",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
     "html-webpack-plugin": "^2.30.1",
+    "ignore-styles": "^5.0.1",
+    "jsdom": "^11.4.0",
+    "mocha": "^4.0.1",
+    "proxyquire": "^1.8.0",
+    "require-dir": "^0.3.2",
+    "require-ensure": "^1.0.2",
+    "sinon": "^4.1.2",
+    "sinon-chai": "^2.14.0",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.4"
   }
