@@ -17,4 +17,5 @@ if (argv.o) {
   require(path.join(process.cwd(), argv.o)); //eslint-disable-line
 } else {
   requireDir('./containers/', { recurse: true });
+  requireDir('./components/', { recurse: true });
 }
